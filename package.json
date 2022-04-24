@@ -5,10 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "prettier": "prettier --write .",
+    "lint": "npm run prettier --fix && vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "uuid": "^8.3.2",
     "vue": "^3.2.13",
     "vuex": "^4.0.0"
   },
